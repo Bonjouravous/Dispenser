@@ -5,4 +5,4 @@ script:
    - mvn clean test
    
 after_failure:
-  - cat target/surefire-reports/*.txt
+  - cat /home/travis/build/Bonjouravous/Dispenser/target/surefire-reports/*.txt

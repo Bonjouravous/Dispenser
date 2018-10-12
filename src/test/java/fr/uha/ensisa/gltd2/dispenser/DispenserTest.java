@@ -45,7 +45,7 @@ public class DispenserTest {
 		verifyZeroInteractions(dummyProvider);
 		sut.select(coca);
 		verify(dummyCashController).givebackMoney(100);
-		verify(dummyProvider).giveDrink(orangina);
+		verify(dummyProvider).giveDrink(coca);
 	}
 
 }

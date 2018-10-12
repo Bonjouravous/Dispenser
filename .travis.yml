@@ -3,3 +3,6 @@ language: java
 script:
    - mvn clean install 
    - mvn clean test
+   
+after_failure:
+  - cat target/surefire-reports/*.txt

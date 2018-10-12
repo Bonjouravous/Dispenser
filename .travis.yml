@@ -2,3 +2,4 @@ language: java
 
 script:
     mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+    java -classpath C:\Users\Étudiant\git\Dispenser\src\test\java\fr\uha\ensisa\gltd2\dispenser\DispenserTest.java;libs\junit-4.12.jar;libs\selenuimmachin.jar junit.textui.TestRunner DispenserTest

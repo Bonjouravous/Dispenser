@@ -41,7 +41,7 @@ public class DispenserTest {
 		List<Drink> listDrinks = sut.getDrinks();
 		Drink coca = listDrinks.get(0);
 
-		sut.pay(200);
+		sut.pay(300);
 		verifyZeroInteractions(dummyProvider);
 		sut.select(coca);
 		verify(dummyCashController).givebackMoney(200);

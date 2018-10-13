@@ -4,5 +4,8 @@ script:
    - mvn clean install 
    - mvn clean test
    
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+   
 after_failure:
   - cat /home/travis/build/Bonjouravous/Dispenser/target/surefire-reports/*.txt

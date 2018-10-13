@@ -43,7 +43,7 @@ public class DispenserTest {
 
 		sut.pay(200);
 		verifyZeroInteractions(dummyProvider);
-		sut.select(sprite);
+		sut.select(coca);
 		verify(dummyCashController).givebackMoney(100);
 		verify(dummyProvider).giveDrink(coca);
 	}

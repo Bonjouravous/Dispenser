@@ -44,7 +44,7 @@ public class DispenserTest {
 		sut.pay(300);
 		verifyZeroInteractions(dummyProvider);
 		sut.select(coca);
-		verify(dummyCashController).givebackMoney(200);
+		verify(dummyCashController).givebackMoney(100);
 		verify(dummyProvider).giveDrink(coca);
 	}
 

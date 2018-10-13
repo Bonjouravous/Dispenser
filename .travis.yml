@@ -1,7 +1,6 @@
 language: java
 
 script:
-   -"mvn cobertura:cobertura"
    - mvn clean install 
    - mvn clean test
    

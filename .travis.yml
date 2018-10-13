@@ -5,7 +5,7 @@ script:
    - mvn clean test
    
 after_success:
-  - CODECOV_TOKEN="9ca20608-c32d-466e-89fc-78769605649d"
+  - export CODECOV_TOKEN="9ca20608-c32d-466e-89fc-78769605649d"
   - bash <(curl -s https://codecov.io/bash)
    
 after_failure:
